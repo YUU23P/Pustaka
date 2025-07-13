@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kategori Buku | Pustaka Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6D8B74;
+      --secondary: #EFEAD8;
+      --accent: #D0C9C0;
+      --dark: #5F7161;
+      --light: #F5F5F5;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: #333;
+    }
+    h1, h2, h3, .logo {
+      font-family: 'Playfair Display', serif;
+    }
+    .category-card {
+      transition: all 0.3s ease;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+ 
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-bold text-[var(--primary)] logo">Pustaka<span class="text-black">Online</span></div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-[var(--primary)]">Beranda</a>
+        <a href="koleksi.html" class="hover:text-[var(--primary)]">Koleksi</a>
+        <a href="kategori.html" class="hover:text-[var(--primary)]">Kategori</a>
+        <a href="tentang.html" class="hover:text-[var(--primary)]">Tentang</a>
+        <a href="kontak.html" class="text-[var(--primary)] font-semibold">Kontak</a>
+      </nav>
+      <a href="masuk.html" class="bg-[var(--primary)] text-white px-4 py-1.5 rounded-full hover:bg-[var(--dark)]">Masuk</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-gradient py-16 text-center">
+    <h1 class="text-4xl font-bold text-gray-800 mb-4">📚 Kategori Buku</h1>
+    <p class="text-gray-600 text-lg">Temukan berbagai kategori menarik untuk kebutuhan bacaanmu.</p>
+  </section>
+
+  <!-- Kategori Grid -->
+  <main class="container mx-auto px-6 py-12">
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div class="category-card p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--primary)]">Fiksi</h3>
+        <p class="text-sm text-gray-600">Cerita rekaan yang menggugah imajinasi dan emosi.</p>
+      </div>
+      <div class="category-card p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--primary)]">Non-Fiksi</h3>
+        <p class="text-sm text-gray-600">Berdasarkan fakta nyata dan informasi edukatif.</p>
+      </div>
+      <div class="category-card p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--primary)]">Sains</h3>
+        <p class="text-sm text-gray-600">Menjelajahi ilmu pengetahuan dan teknologi.</p>
+      </div>
+      <div class="category-card p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--primary)]">Sejarah</h3>
+        <p class="text-sm text-gray-600">Mempelajari peristiwa penting masa lalu.</p>
+      </div>
+      <div class="category-card p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--primary)]">Psikologi</h3>
+        <p class="text-sm text-gray-600">Memahami perilaku dan pikiran manusia.</p>
+      </div>
+      <div class="category-card p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--primary)]">Bisnis</h3>
+        <p class="text-sm text-gray-600">Strategi, manajemen, dan kewirausahaan.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12 mt-auto">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-400">© 2025 PustakaOnline. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </footer>
+</body>
+</html>

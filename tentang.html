@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak | Pustaka Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6D8B74;
+      --secondary: #EFEAD8;
+      --accent: #D0C9C0;
+      --dark: #5F7161;
+      --light: #F5F5F5;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: #333;
+    }
+
+    h1, h2, h3, .logo {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-bold text-[var(--primary)] logo">Pustaka<span class="text-black">Online</span></div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-[var(--primary)]">Beranda</a>
+        <a href="koleksi.html" class="hover:text-[var(--primary)]">Koleksi</a>
+        <a href="kategori.html" class="hover:text-[var(--primary)]">Kategori</a>
+        <a href="tentang.html" class="hover:text-[var(--primary)]">Tentang</a>
+        <a href="kontak.html" class="text-[var(--primary)] font-semibold">Kontak</a>
+      </nav>
+      <a href="#" class="bg-[var(--primary)] text-white px-4 py-1.5 rounded-full hover:bg-[var(--dark)]">Masuk</a>
+    </div>
+  </header>
+ <!-- Tentang Section -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-6 text-gray-800">Tentang Kami</h1>
+      <p class="text-lg text-gray-600 mb-4">
+        <strong>Pustaka Online</strong> adalah platform perpustakaan digital modern yang menyediakan akses mudah dan cepat ke koleksi buku elektronik dari berbagai genre dan penulis.
+      </p>
+      <p class="text-lg text-gray-600 mb-4">
+        Misi kami adalah memberikan kemudahan bagi masyarakat dalam membaca dan memperoleh ilmu pengetahuan tanpa batasan waktu dan tempat.
+      </p>
+      <p class="text-lg text-gray-600">
+        Dengan tampilan yang ramah pengguna, fitur pencarian yang canggih, dan koleksi buku yang terus diperbarui, kami berkomitmen untuk menjadi mitra literasi digital terbaik bagi semua kalangan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tim Section -->
+  <section class="bg-[var(--secondary)] py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-10">Tim Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="https://source.unsplash.com/100x100/?person" class="mx-auto rounded-full mb-4" alt="Founder">
+          <h3 class="font-semibold text-lg">Bayu Patrio</h3>
+          <p class="text-gray-500 text-sm">Founder & Developer</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="https://source.unsplash.com/100x100/?woman" class="mx-auto rounded-full mb-4" alt="UI Designer">
+          <h3 class="font-semibold text-lg">Sarah Dwi</h3>
+          <p class="text-gray-500 text-sm">UI/UX Designer</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="https://source.unsplash.com/100x100/?tech" class="mx-auto rounded-full mb-4" alt="Content Manager">
+          <h3 class="font-semibold text-lg">Agus Nanda</h3>
+          <p class="text-gray-500 text-sm">Content Manager</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12 mt-20">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="logo text-2xl font-bold mb-4">
+            <span class="text-[var(--primary)]">Pustaka</span>Online
+          </div>
+          <p class="mb-4 text-gray-400">Temukan, baca, dan jelajahi dunia melalui koleksi buku digital terlengkap.</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-lg mb-4">Tautan Cepat</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white">Beranda</a></li>
+            <li><a href="#" class="hover:text-white">Tentang Kami</a></li>
+            <li><a href="#" class="hover:text-white">Koleksi Buku</a></li>
+            <li><a href="#" class="hover:text-white">Artikel</a></li>
+            <li><a href="#" class="hover:text-white">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-lg mb-4">Kategori Populer</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white">Fiksi</a></li>
+            <li><a href="#" class="hover:text-white">Non-Fiksi</a></li>
+            <li><a href="#" class="hover:text-white">Sains</a></li>
+            <li><a href="#" class="hover:text-white">Bisnis</a></li>
+            <li><a href="#" class="hover:text-white">Sejarah</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-lg mb-4">Kontak Kami</h3>
+          <p class="text-gray-400">📧 info@pustakaonline.com</p>
+          <p class="text-gray-400">📞 +62 812 3456 7890</p>
+          <p class="text-gray-400">📍 Jl. Buku No. 123, Jakarta</p>
+        </div>
+      </div>
+
+      <div class="text-center text-gray-500 mt-10">© 2025 PustakaOnline. Hak Cipta Dilindungi.</div>
+    </div>
+  </footer>
+
+</body>
+</html>

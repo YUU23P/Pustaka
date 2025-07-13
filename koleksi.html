@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koleksi Buku | Pustaka Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6D8B74;
+      --secondary: #EFEAD8;
+      --accent: #D0C9C0;
+      --dark: #5F7161;
+      --light: #F5F5F5;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: #333;
+    }
+    h1, h2, h3, .logo {
+      font-family: 'Playfair Display', serif;
+    }
+    .book-card {
+      transition: all 0.3s ease;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .book-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+ 
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-bold text-[var(--primary)] logo">Pustaka<span class="text-black">Online</span></div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-[var(--primary)]">Beranda</a>
+        <a href="koleksi.html" class="hover:text-[var(--primary)]">Koleksi</a>
+        <a href="kategori.html" class="hover:text-[var(--primary)]">Kategori</a>
+        <a href="tentang.html" class="hover:text-[var(--primary)]">Tentang</a>
+        <a href="kontak.html" class="text-[var(--primary)] font-semibold">Kontak</a>
+      </nav>
+      <a href="masuk.html" class="bg-[var(--primary)] text-white px-4 py-1.5 rounded-full hover:bg-[var(--dark)]">Masuk</a>
+    </div>
+  </header>
+  <!-- Hero / Search -->
+  <section class="hero-gradient py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">📚 Koleksi Buku Digital</h1>
+      <p class="text-lg text-gray-600 mb-6">Jelajahi berbagai buku digital dari kategori pilihan!</p>
+      <div class="max-w-xl mx-auto flex items-center bg-white border rounded-full px-4 py-2 shadow-md">
+        <input type="text" placeholder="Cari judul, penulis, atau topik..." class="flex-grow outline-none px-3 py-2 text-gray-700" />
+        <button class="text-white bg-[var(--primary)] px-4 py-2 rounded-full hover:bg-[var(--dark)]">Cari</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Koleksi Buku -->
+  <main class="container mx-auto px-6 py-12 flex-grow">
+    <h2 class="text-2xl font-bold mb-6 text-center">📖 Semua Koleksi Buku</h2>
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      
+      <!-- Card Buku -->
+      <div class="book-card bg-white">
+        <img src="https://source.unsplash.com/400x250/?book" alt="Cover Buku" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Atomic Habits</h3>
+          <p class="text-sm text-gray-600">James Clear</p>
+          <p class="text-green-600 mt-2">Tersedia</p>
+          <button class="mt-3 w-full bg-[var(--primary)] text-white py-2 rounded-lg hover:bg-[var(--dark)]">Pinjam</button>
+        </div>
+      </div>
+
+      <div class="book-card bg-white">
+        <img src="https://source.unsplash.com/400x250/?library" alt="Cover Buku" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Bumi Manusia</h3>
+          <p class="text-sm text-gray-600">Pramoedya A. Toer</p>
+          <p class="text-green-600 mt-2">Tersedia</p>
+          <button class="mt-3 w-full bg-[var(--primary)] text-white py-2 rounded-lg hover:bg-[var(--dark)]">Pinjam</button>
+        </div>
+      </div>
+
+      <!-- Tambah card buku lainnya sesuai kebutuhan -->
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="logo text-2xl font-bold mb-4">
+          <span class="text-[var(--primary)]">Pustaka</span>Online
+        </div>
+        <p class="text-gray-400">Temukan, baca, dan jelajahi dunia melalui koleksi buku digital terlengkap.</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-3">Kategori Populer</h3>
+        <ul class="text-gray-400 space-y-1">
+          <li>Fiksi</li>
+          <li>Sains</li>
+          <li>Psikologi</li>
+          <li>Sejarah</li>
+          <li>Seni</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-3">Kontak Kami</h3>
+        <p class="text-gray-400">📧 info@pustakaonline.com</p>
+        <p class="text-gray-400">📞 +62 812 3456 7890</p>
+        <p class="text-gray-400">📍 Jl. Buku No. 123, Jakarta</p>
+      </div>
+    </div>
+    <div class="text-center text-gray-500 mt-10">© 2025 PustakaOnline. Hak Cipta Dilindungi.</div>
+  </footer>
+
+</body>
+</html>
